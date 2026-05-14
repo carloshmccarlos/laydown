@@ -13,4 +13,4 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: https://lay-down.pages.dev/sitemap.xml
+Sitemap: https://lay-down.317713.xyz/sitemap.xml
