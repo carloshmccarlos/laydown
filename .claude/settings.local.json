@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:lay-down.317713.xyz)",
+      "WebFetch(domain:lay-down.317713.xyz)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://lay-down.317713.xyz/favicon.svg)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://lay-down.317713.xyz/favicon.ico)",
+      "Bash(curl:*)"
+    ],
+    "deny": []
+  }
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { useCalculatorStore } from "@/lib/store/calculatorStore";
 import {
@@ -22,6 +22,7 @@ import { getCityByCode } from "@/lib/data/cities";
 
 export default function ComparePage() {
   const router = useRouter();
+  useEffect(() => { document.title = "方案对比分析 | 幸福生活计算器"; }, []);
   const { plans, comparePlanIds, clearComparePlans } = useCalculatorStore();
 
   const comparePlans = useMemo(

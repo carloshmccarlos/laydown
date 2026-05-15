@@ -31,6 +31,7 @@ export default function DemoPage() {
   const setResult = useCalculatorStore((s) => s.setResult);
 
   useEffect(() => {
+    document.title = "示例测算结果 | 幸福生活计算器";
     const city = getCityByCode(demoData.cityCode) || getCityByCode("shanghai")!;
     const result = calculateResult(demoData, city);
     setFormState(demoData);

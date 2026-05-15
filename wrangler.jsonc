@@ -1,5 +1,14 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "lay-down",
+  "account_id": "dddf74f874f7c44aac0091fae1613bed",
   "compatibility_date": "2026-02-12",
-  "compatibility_flags": ["nodejs_compat"]
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./worker/index.ts",
+  "assets": {
+    "directory": "dist/client",
+    "not_found_handling": "none",
+    "binding": "ASSETS"
+  },
+  "images": { "binding": "IMAGES" }
 }

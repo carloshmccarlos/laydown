@@ -2,7 +2,7 @@
 
 ## 总览
 
-项目是纯前端 Next.js 应用。用户输入进入 Zustand store，经计算引擎生成结果，再由结果页、方案页和对比页展示。保存方案和对比选择只写入 localStorage。
+项目是纯前端 vinext 应用（Next.js API surface on Vite）。用户输入进入 Zustand store，经计算引擎生成结果，再由结果页、方案页和对比页展示。保存方案和对比选择只写入 localStorage。
 
 ```text
 /setup 输入

@@ -39,7 +39,7 @@
 
 - ESLint：`pnpm lint`
 - TypeScript：`pnpm exec tsc --noEmit`
-- Vinext build：`pnpm build:vinext`
+- Vinext build：`pnpm build`
 - Playwright E2E：`pnpm test:e2e`
 
 ## 约束
@@ -65,3 +65,7 @@
 - RSC, SSR, and client environments are handled by `@vitejs/plugin-rsc`.
 - `cloudflare:workers` module provides Workers bindings in server components and route handlers.
 - Static crawler files (`robots.txt`, `sitemap.xml`, `llms.txt`, etc.) remain in `public/`.
+- `next.config.ts` and `next-env.d.ts` removed; all Next.js-specific build configuration is gone.
+- `next/font/google` replaced with standard Google Fonts CSS import in `globals.css`.
+- ESLint config updated to remove `eslint-config-next`; uses standard `@typescript-eslint` rules.
+- `package.json` scripts unified: `dev`, `build`, `start` all point to vinext commands.

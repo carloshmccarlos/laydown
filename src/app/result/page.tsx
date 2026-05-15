@@ -30,6 +30,7 @@ export default function ResultPage() {
   const [result, setLocalResult] = useState<CalculatorResult | null>(storeResult);
 
   useEffect(() => {
+    document.title = "查看幸福生活测算结果 | 幸福生活计算器";
     if (!storeFormState) {
       router.push("/setup");
       return;

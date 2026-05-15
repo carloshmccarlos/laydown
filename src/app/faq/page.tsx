@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronDown, HelpCircle, Shield, Users, FileText, Rocket, Eye } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -29,6 +29,7 @@ const faqs = [
 ];
 
 export default function FAQPage() {
+  useEffect(() => { document.title = "帮助与常见问题 | 幸福生活计算器"; }, []);
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   const [activeTab, setActiveTab] = useState("faq");
 

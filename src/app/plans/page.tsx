@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useCalculatorStore } from "@/lib/store/calculatorStore";
 import { Search, Eye, Pencil, Copy, Trash2, Scale, Check, PlusCircle, BarChart3, Lightbulb, Clock, Settings } from "lucide-react";
@@ -11,6 +11,7 @@ import { getCityByCode } from "@/lib/data/cities";
 
 export default function PlansPage() {
   const router = useRouter();
+  useEffect(() => { document.title = "管理我的幸福生活方案 | 幸福生活计算器"; }, []);
   const { plans, deletePlan, duplicatePlan, toggleComparePlan, comparePlanIds, setFormState, setResult, updatePlan } = useCalculatorStore();
   const [search, setSearch] = useState("");
   const [filterMode, setFilterMode] = useState<string>("all");

@@ -1,5 +1,10 @@
 import { Suspense } from "react";
+import type { Metadata } from "next";
 import SetupForm from "@/components/setup/SetupForm";
+
+export const metadata: Metadata = {
+  title: "填写财务自由测算信息",
+};
 
 export default function SetupPage() {
   return (
